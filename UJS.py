@@ -91,7 +91,7 @@ def curriculum(session, user,url1,name):
         with open(file_name, "w", encoding="utf-8") as f:
             f.write(
                 "<!DOCTYPE html><html><head><title></title><style type='text/css'>.blacktab th,.blacktab td{border: 1px solid #000;color:#000;}.blacktab{border-collapse:collapse;}</style></head><body>" + str(curriculum) + "</body></html>")
-        print("File saved at " + os.getcwd() + "\\" + name + str(today_date) + 'html')
+        print("File saved at " + os.getcwd() + "\\" + name + str(today_date) + '.html')
     else:
         print("课程表爬取失败")
     return url2
@@ -129,7 +129,7 @@ def grade(session,user,url1,name):
         with open(file_name, "w", encoding="utf-8") as f:
             f.write(
                 "<!DOCTYPE html><html><head><title></title><style type='text/css'>.datelist{border: 1px solid #ccc;border-collapse: collapse;width: 100%;margin: 2px auto;}.datelist tbody td, .datelist tbody th{border: 1px solid #000;color:#000;}.datelist tr.alt{background: #F8F7F7;}</style></head><body>" + str(grade) + "</body></html>")
-        print("File saved at " + os.getcwd() + "\\" + name  + 'html')
+        print("File saved at " + os.getcwd() + "\\" + name  + '.html')
     else:
         print("成绩爬取失败")
 if __name__ == '__main__':
